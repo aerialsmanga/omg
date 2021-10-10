@@ -1,5 +1,21 @@
 html, body {
-    background: #222;
+    background: #444;
     overflow: hidden;
     margin: 0;
+}
+#container {
+    width: 750px;
+    margin: 0 auto;
+    font: 18px Lora, Baskerville, Georgia, Times, serif;
+    color: rgb(240, 240, 240);
+}
+h1 {
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+}
+
+#particle {
+    background: #eee;
+    height: 300px;
 }

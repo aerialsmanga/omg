@@ -65,7 +65,7 @@ var demo = Sketch.create({
     retina: 'auto',
     fullscreen: false,
     width: 343,
-    height: 300
+    height: 200
 });
 
 demo.setup = function() {

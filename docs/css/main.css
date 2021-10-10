@@ -1,7 +1,7 @@
 html, body {
     background: #444;
-    overflow: hidden;
     margin: 0;
+    padding: 0;
 }
 #container {
     min-width: 343px;
@@ -20,6 +20,6 @@ h1 {
 #particle {
     background: #eee;
     width: 343px;
-    height: 300px;
+    height: 200px;
     margin: 0 auto;
 }

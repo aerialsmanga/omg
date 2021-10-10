@@ -64,7 +64,7 @@ var demo = Sketch.create({
     container: document.getElementById( 'particle' ),
     retina: 'auto',
     fullscreen: false,
-    width: 750,
+    width: 343,
     height: 300
 });
 

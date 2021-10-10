@@ -4,8 +4,10 @@ html, body {
     margin: 0;
 }
 #container {
-    width: 750px;
+    min-width: 343px;
+    max-width: 750px;
     margin: 0 auto;
+    padding: 0 16px;
     font: 18px Lora, Baskerville, Georgia, Times, serif;
     color: rgb(240, 240, 240);
 }
@@ -17,5 +19,7 @@ h1 {
 
 #particle {
     background: #eee;
+    width: 343px;
     height: 300px;
+    margin: 0 auto;
 }

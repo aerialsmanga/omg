@@ -1,14 +1,14 @@
-function God(name, description, src) {
+function God(name, src, description) {
     this.name = name;
-    this.description = description;
     this.src = src;
+    this.description = description;
 }
 
 const gods = [
-    new God("Coré", "Coré description", "core.png"),
-    new God("Demeter", "Demeter description", "demeter.png"),
-    new God("Dio", "Dio description", "dio.png"),
-    new God("Hecate", "Hecate description", "hecate.png")
+    new God("Coré, la fille", "core.png", "Coré Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
+    new God("Demeter, la mère", "demeter.png", "Demeter Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
+    new God("Dio, l'exalté", "dio.png", "Dio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
+    new God("Hecate, l'obscure", "hecate.png", "Hecate Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
 ];
 
 const selectGod = document.getElementById('select-god');
@@ -25,5 +25,5 @@ selectGod.onclick = function() {
     godImg.src = 'img/' + god.src;
     godImg.alt = god.name;
 
-    document.getElementById('god-description').innerHTML = god.description + ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
+    document.getElementById('god-description').innerHTML = god.description;
 };

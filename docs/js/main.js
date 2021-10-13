@@ -6,16 +6,16 @@ function God(name, subtitle, imgId, description) {
 }
 
 const gods = [
-    new God("Coré", "La fille", "img-core", "Coré Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
-    new God("Demeter", "La mère", "img-demeter", "Demeter Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
-    new God("Dio", "L'exalté", "img-dio", "Dio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
-    new God("Hecate", "L'obscure", "img-hecate", "Hecate Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+    new God("Coré", "La fille", "img-core", "Déesse du renouveau, elle brille par sa douceur et par son calme absolu. Les prêtres et prêtresses de Coré sont spécialisés dans les sorts de guérison et d'altération physique."),
+    new God("Demeter", "La mère", "img-demeter", "Déesse de la nature et divinité principale d'Eleusis, elle est sévère mais avant tout bienveillante. Elle accorde à ses fidèles les pouvoirs des éléments. (Feu, eau, air, terre.) Les sorts qu'elle inspire aux Mystes sont simples mais très puissants et d'une grande stabilité."),
+    new God("Dio", "L'exalté", "img-dio", "Dieu de la démesure. Excentrique et épicurien, Dio accueille avec joie tous ses fidèles. Les Mystes sous son égide pourront utiliser des sorts de manipulation mentale."),
+    new God("Hecate", "L'obscure", "img-hecate", "Déesse de la nuit et des ténèbres, elle est lunatique et imprévisible. Les Mystes qu'elle choisit seront capables de manipuler les pouvoirs liés à la nuit et à la mort. Ces sorts demandent la plus grande prudence car ils sont instables et peuvent se retourner contre leur utilisateur.")
 ];
 
 const selectGod = document.getElementById('select-god');
 selectGod.onclick = function() {
     document.getElementById('home').style.display = 'none';
-    $('#result').fadeIn(6000);
+    $('#result').fadeIn(10000);
 
     const god = gods[Math.floor(Math.random()*gods.length)];
 

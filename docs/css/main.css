@@ -58,11 +58,18 @@ h2 {
 .block-button:hover {
     background-color: inherit;
 }
-.block-pictures {
-    text-align: center;
+#sprite-image {
+    width: 171px;
+    height: 171px;
+    margin: 0 auto;
+    opacity: 0.3;
+    background: url("../img/symboles.png") 0 0;
+    animation: play 0.5s steps(4) infinite;
 }
-.block-pictures img {
-    width: 343px;
+@keyframes play {
+    100% {
+        background-position: -686px;
+    }
 }
 .img-god {
     width: 171px;

@@ -32,7 +32,7 @@ const onDrawingFinished = function() {
     }
 
     step2Triggered = true;
-    $('#step2').fadeIn(1000, function() {
-        setTimeout(selectGod, 2000);
+    $('#step2').fadeIn(800, function() {
+        setTimeout(selectGod, 1800);
     });
 };

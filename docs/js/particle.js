@@ -131,7 +131,7 @@ demo.mousemove = function() {
 
     if (movesCount > 100) {
         demo.stop();
-        $('#step2').fadeIn(1000);
+        onDrawingFinished();
         return;
     }
     movesCount++;

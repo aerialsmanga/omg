@@ -12,10 +12,10 @@ const gods = [
     new God("Hecate", "L'obscure", "img-hecate", "Déesse de la nuit et des ténèbres, elle est lunatique et imprévisible. Les Mystes qu'elle choisit seront capables de manipuler les pouvoirs liés à la nuit et à la mort. Ces sorts demandent la plus grande prudence car ils sont instables et peuvent se retourner contre leur utilisateur.")
 ];
 
-const selectGod = document.getElementById('select-god');
-selectGod.onclick = function() {
-    document.getElementById('home').style.display = 'none';
-    $('#result').fadeIn(10000);
+const selectGod = function() {
+    $('#home').fadeOut(600, function () {
+        $('#result').fadeIn(10000);
+    });
 
     const god = gods[Math.floor(Math.random()*gods.length)];
 
@@ -23,4 +23,16 @@ selectGod.onclick = function() {
     document.getElementById('god-subtitle').innerHTML = god.subtitle;
     document.getElementById(god.imgId).style.display = 'inline';
     document.getElementById('god-description').innerHTML = god.description;
+};
+
+var step2Triggered = false;
+const onDrawingFinished = function() {
+    if (step2Triggered) {
+        return;
+    }
+
+    step2Triggered = true;
+    $('#step2').fadeIn(1000, function() {
+        setTimeout(selectGod, 2000);
+    });
 };

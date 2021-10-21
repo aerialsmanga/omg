@@ -18,15 +18,17 @@
                     1. Dessinez une forme ci-dessous :
                 </p>
                 <div id="particle"></div>
-                <p>
-                    2. Découvrez votre dieu gardien :
-                </p>
-                <p class="block-buttons">
-                    <a id="select-god" class="block-button" href="javascript:void(0)">Découvrir</a>
-                </p>
-                <p class="block-pictures">
-                    <img src="img/symboles.png" alt="Symboles des dieux">
-                </p>
+                <div id="step2" style="display:none;">
+                    <p>
+                        2. Découvrez votre dieu gardien :
+                    </p>
+                    <p class="block-buttons">
+                        <a id="select-god" class="block-button" href="javascript:void(0)">Découvrir</a>
+                    </p>
+                    <p class="block-pictures">
+                        <img src="img/symboles.png" alt="Symboles des dieux">
+                    </p>
+                </div>
             </div>
             <div id="result" style="display:none;">
                 <h1 id="god-name"></h1>
@@ -41,11 +43,11 @@
             </div>
         </div>
         <script src="js/sketch.min.js"></script>
-        <script src="js/particle.js"></script>
         <script
                 src="https://code.jquery.com/jquery-3.6.0.min.js"
                 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
                 crossorigin="anonymous"></script>
+        <script src="js/particle.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

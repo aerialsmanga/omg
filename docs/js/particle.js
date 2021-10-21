@@ -60,6 +60,8 @@ var COLOURS = [ '#E7DD69' ];
 var particles = [];
 var pool = [];
 
+var movesCount = 0;
+
 var demo = Sketch.create({
     container: document.getElementById( 'particle' ),
     retina: 'auto',
@@ -126,6 +128,13 @@ demo.draw = function() {
 };
 
 demo.mousemove = function() {
+
+    if (movesCount > 100) {
+        demo.stop();
+        $('#step2').fadeIn(1000);
+        return;
+    }
+    movesCount++;
 
     var particle, theta, force, touch, max, i, j, n;
 

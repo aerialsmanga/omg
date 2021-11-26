@@ -129,7 +129,7 @@ demo.draw = function() {
 
 demo.mousemove = function() {
 
-    if (movesCount > 30) {
+    if (movesCount > 20) {
         demo.stop();
         onDrawingFinished();
         return;
